@@ -14,6 +14,11 @@ body {
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile-card:hover{
+    transform: translatey(-10px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
 }
 .profile-pic {
     width: 120px;
@@ -33,8 +38,6 @@ body {
     font-size: 16px;
     transition: background-color 0.3s, transform 0.2s;
 }
-
-/* --- Level 6: Hover Effects --- */
 .contact-btn:hover {
     background-color: #0056b3;
     transform: scale(1.05);
@@ -42,4 +45,51 @@ body {
 .profile-pic:hover {
     transform: rotate(5deg) scale(1.1);
     border-color: #0056b3;
+}
+.skills{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+.skills a{
+    text-decoration: none;
+    background-color: #a0c0dc;
+    color: black;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+.skills a:hover{
+    background-color: rgb(96, 148, 206);
+    color: aliceblue;
+}
+.social-platform{
+    margin-top: 18px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.social-platform a{
+    text-decoration: none;
+    background-color: #a0c0dc;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 7px;
+    border-radius: 5px;
+    transition: 0.4s; 
+}
+.social-platform a:hover{
+    background-color: #007bff;
+    color: whitesmoke;
+}
+hr {
+    border: 0;                 
+    height: 1px;               
+    background-color: #ddd;
+    margin-top: 20px;
 }
